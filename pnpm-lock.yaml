@@ -13,7 +13,7 @@ importers:
         version: 11.9.1
       drizzle-orm:
         specifier: ^0.41.0
-        version: 0.41.0(better-sqlite3@11.9.1)(gel@2.0.1)
+        version: 0.41.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.9.1)(gel@2.0.1)
       next:
         specifier: 15.2.4
         version: 15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -30,6 +30,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.1.1
+      '@types/better-sqlite3':
+        specifier: ^7.6.12
+        version: 7.6.12
       '@types/node':
         specifier: ^20
         version: 20.17.30
@@ -632,6 +635,9 @@ packages:
 
   '@tailwindcss/postcss@4.1.1':
     resolution: {integrity: sha512-GX9AEM+msH0i2Yh1b6CuDRaZRo3kmbvIrLbSfvJ53C3uaAgsQ//fTQAh9HMQ6t1a9zvoUptlYqG//plWsBQTCw==}
+
+  '@types/better-sqlite3@7.6.12':
+    resolution: {integrity: sha512-fnQmj8lELIj7BSrZQAdBMHEHX8OZLYIHXqAKT1O7tDfLxaINzf00PMjw22r3N/xXh0w/sGHlO6SVaCQ2mj78lg==}
 
   '@types/node@20.17.30':
     resolution: {integrity: sha512-7zf4YyHA+jvBNfVrk2Gtvs6x7E8V+YDW05bNfG2XkWDJfYRXrTiP/DsB2zSYTaHX0bGIujTBQdMVAhb+j7mwpg==}
@@ -1492,6 +1498,10 @@ snapshots:
       postcss: 8.5.3
       tailwindcss: 4.1.1
 
+  '@types/better-sqlite3@7.6.12':
+    dependencies:
+      '@types/node': 20.17.30
+
   '@types/node@20.17.30':
     dependencies:
       undici-types: 6.19.8
@@ -1582,8 +1592,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.41.0(better-sqlite3@11.9.1)(gel@2.0.1):
+  drizzle-orm@0.41.0(@types/better-sqlite3@7.6.12)(better-sqlite3@11.9.1)(gel@2.0.1):
     optionalDependencies:
+      '@types/better-sqlite3': 7.6.12
       better-sqlite3: 11.9.1
       gel: 2.0.1
 

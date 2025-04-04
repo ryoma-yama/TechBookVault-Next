@@ -10,6 +10,7 @@
     "format": "biome format . --write",
     "db:generate:local": "drizzle-kit generate --config=drizzle.config.local.ts",
     "db:push:local": "drizzle-kit push --config=drizzle.config.local.ts",
+    "db:studio:local": "drizzle-kit studio --config=drizzle.config.local.ts",
     "db:generate:prod": "drizzle-kit generate --config=drizzle.config.prod.ts",
     "db:push:prod": "drizzle-kit push --config=drizzle.config.prod.ts"
   },
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
