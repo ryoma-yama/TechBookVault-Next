@@ -1,0 +1,17 @@
+skip:
+  - "pnpm-lock.yaml"
+
+pre-commit:
+  commands:
+    biome:
+      glob: "*.{js,ts,tsx,json,yml,yaml,md,html,cjs,mjs}"
+      run: |
+        pnpm biome format {staged_files} --write
+        pnpm biome check {staged_files}
+
+pre-push:
+  commands:
+    lint:
+      run: pnpm lint
+    # test:
+    #   run: pnpm test
