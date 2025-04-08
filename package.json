@@ -30,8 +30,8 @@
     "@cloudflare/workers-types": "^4.20250405.0",
     "@tailwindcss/postcss": "^4",
     "@types/better-sqlite3": "^7.6.12",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "^20.17.30",
+    "@types/react": "^19.1.0",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.30.6",
     "tailwindcss": "^4",
@@ -44,7 +44,11 @@
       "@biomejs/biome",
       "better-sqlite3",
       "esbuild",
+      "lefthook",
       "sharp"
+    ],
+    "ignoredBuiltDependencies": [
+      "core-js"
     ]
   }
 }
