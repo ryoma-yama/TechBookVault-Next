@@ -22,7 +22,6 @@
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "wrangler": "2.14.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
