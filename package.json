@@ -15,6 +15,7 @@
     "db:push:prod": "drizzle-kit push --config=drizzle.config.prod.ts"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.0",
     "better-sqlite3": "^11.9.1",
     "biome": "^0.3.3",
     "class-variance-authority": "^0.7.1",
