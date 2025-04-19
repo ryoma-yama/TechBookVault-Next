@@ -2,12 +2,11 @@
     "name": "tech-book-vault",
     "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
     "features": {
-        "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/devcontainers/features/pnpm:1": {
-            "version": "10"
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "20",
+            "pnpmVersion": "10"
         },
-        "ghcr.io/devcontainers/features/rust:1": {},
-        "ghcr.io/devcontainers/features/microsoft-build-tools:1": {}
+        "ghcr.io/devcontainers/features/common-utils:2": {}
     },
     "postCreateCommand": "pnpm install --frozen-lockfile && pnpm approve-builds",
     "customizations": {
@@ -23,5 +22,5 @@
             }
         }
     },
-    "remoteUser": "node"
+    "remoteUser": "codespace"
 }
